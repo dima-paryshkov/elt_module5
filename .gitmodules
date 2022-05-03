@@ -1,0 +1,3 @@
+[submodule "practicum1"]
+	path = practicum1
+	url = git@github.com:dima-paryshkov/elt_m5_static_and_dynamic_library_makefile.git
