@@ -16,6 +16,9 @@ Creation of a static, dynamic library. For the dynamic library, two options for 
 
 Creating a simple kernel module and building it using a makefile. The module represents the possibility of using a memory area into which a string can be written and read.
 
+#### Practice 3
+
+
 
 ##### Attention
 
