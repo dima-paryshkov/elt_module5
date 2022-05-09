@@ -16,9 +16,15 @@ Creation of a static, dynamic library. For the dynamic library, two options for 
 
 Creating a simple kernel module and building it using a makefile. The module represents the possibility of using a memory area into which a string can be written and read.
 
-#### Practice 3
+#### [Practice 3](https://github.com/dima-paryshkov/elt_m5_driver)
 
+Working with sysfs, netlink and chardev:
 
+sysfs: module, that control leds on your keyboard.
+
+chardev: example of character device.
+
+netlink: This is a client server application. The server is a kernel module, and the client is a user-space program. Communication occurs through a socket with the type AF_NETLINK (communication between kernel and user space). You send a message, the server responds with a greeting, your call number, and an echo response to your message.
 
 ##### Attention
 
