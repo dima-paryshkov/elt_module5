@@ -28,8 +28,8 @@ void main()
     memset(&dest_addr, 0, sizeof(dest_addr));
     memset(&dest_addr, 0, sizeof(dest_addr));
     dest_addr.nl_family = AF_NETLINK;
-    dest_addr.nl_pid = 0;    /* For Linux Kernel */
-    dest_addr.nl_groups = 0; /* unicast */
+    dest_addr.nl_pid = 0; 
+    dest_addr.nl_groups = 0; 
 
     nlh = (struct nlmsghdr *)malloc(NLMSG_SPACE(MAX_PAYLOAD));
     memset(nlh, 0, NLMSG_SPACE(MAX_PAYLOAD));
@@ -39,7 +39,6 @@ void main()
 
     printf("Enter short message for kernel: \n");
     scanf("%s", NLMSG_DATA(nlh));
-    // strcpy(NLMSG_DATA(nlh), "Hello");
 
     iov.iov_base = (void *)nlh;
     iov.iov_len = nlh->nlmsg_len;
